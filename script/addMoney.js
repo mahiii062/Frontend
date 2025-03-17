@@ -10,11 +10,16 @@ document.getElementById('add-money').addEventListener('click', function (event) 
     const mainBalance = document.getElementById('main-balance').innerText;
     const convertedMainBalance = parseInt(mainBalance);
 
-    if (convertedPin === 1234) {
-        const sum = convertedMainBalance + convertedAmount;
-        document.getElementById('main-balance').innerText = sum;
+    if (amount && pin) {
+        if (convertedPin === 1234) {
+            const sum = convertedMainBalance + convertedAmount;
+            document.getElementById('main-balance').innerText = sum;
+        }
+        else {
+            alert("Enter a valid pin");
+        }
     }
     else {
-        console.log("Pin is not correct");
+        alert("Pin is not correct");
     }
 })
