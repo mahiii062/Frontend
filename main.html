@@ -33,7 +33,7 @@
                         <h3>Add Money</h3>
                     </div>
 
-                    <div id="cashout-box" class="box border p-4 text-center rounded-sm">
+                    <div id="cashout-box" class="box cursor-pointer border p-4 text-center rounded-sm">
                         <img class="w-8 mx-auto" src="./assets/send1.png" alt="">
                         <h3>Cash Out</h3>
                     </div>
@@ -53,7 +53,7 @@
                         <h3>Pay Bill</h3>
                     </div>
 
-                    <div class="box border p-4 text-center rounded-sm">
+                    <div id="transaction-box" class="box border p-4 text-center rounded-sm">
                         <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="">
                         <h3>Transactions History</h3>
                     </div>
@@ -66,7 +66,7 @@
                             <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                                 <div class="card-body">
                                     <legend>Select Method</legend>
-                                    <select class="select">
+                                    <select id="allbank" class="select">
                                         <option disabled selected>Select Bank</option>
                                         <option value="Bkash">Bkash</option>
                                         <option value="Nagad">Nagad</option>
@@ -129,13 +129,25 @@
                     </fieldset>
                 </section>
 
+                <section id="transaction-history">
+                    <h1 class="text-3xl font-bold text-red-400 text-center p-3">Transaction History</h1>
+                    <div id="transaction-container">
+
+                    </div>
+                </section>
             </section>
         </header>
     </section>
 
-    <script src="script/addMoney.js"></script>
-    <script src="script/toggle.js"></script>
-    <script src="script/cashout.js"></script>
+    <!-- <script src="script/addMoney.js"></script> -->
+    <!-- <script src="script/toggle.js"></script> -->
+    <!-- <script src="script/cashout.js"></script> -->
+
+    <script src="utilities/utilities.js"></script>
+    <script src="script/ADDmoneyADD.js"></script>
+    <script src="utilities/toggle.js"></script>
+    <script src="script/CASHoutCASH.js"></script>
+    <script src="script/transactionHistory.js"></script>
 </body>
 
 </html>
